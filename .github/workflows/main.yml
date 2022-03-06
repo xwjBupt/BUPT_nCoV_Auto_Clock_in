@@ -28,11 +28,11 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: 'signin'
       env:
-        USERNAME: ${{ secrets.USERNAME }}
-        PASSWORD: ${{ secrets.PASSWORD }}
-        AREA: ${{ secrets.AREA }}
-        PROVINCE: ${{ secrets.PROVINCE }}
-        CITY: ${{ secrets.CITY }}
-        SFZX: ${{ secrets.SFZX }}
+        USERNAME: ${{ secrets.2017010186 }}
+        PASSWORD: ${{ secrets.08160013 }}
+        AREA: ${{ secrets.北京市 海淀区 }}
+        PROVINCE: ${{ secrets.北京市 }}
+        CITY: ${{ secrets.北京市 }}
+        SFZX: ${{ secrets.1 }}
       run: python auto.py
 
